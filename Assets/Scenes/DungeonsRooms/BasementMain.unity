@@ -1458,10 +1458,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadedRooms: []
+  updateRoomsRefresh: 0.3
+  uptadeRoomsDuration: 4.2
+  currentTime: 0
   canSpawnItem: 0
-  blockingFloat: 0
-  timeToBlock: 3
-  isBlock: 1
 --- !u!4 &1957835534
 Transform:
   m_ObjectHideFlags: 0

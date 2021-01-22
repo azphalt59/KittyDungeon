@@ -24,6 +24,9 @@ public class RoomController : MonoBehaviour
     bool isLoadingRoom = false;
     bool spawnedBossRoom = false;
     bool updatedRooms = false;
+    public float updateRoomsRefresh;
+    public float uptadeRoomsDuration;
+    public float currentTime;
 
     public bool canSpawnItem = false;
     
@@ -36,7 +39,8 @@ public class RoomController : MonoBehaviour
 
     void Start() 
     {
-
+        StartCoroutine(UpdateRoutineRooms());
+        
     }
     public void LoadRoom( string name, int x, int y)
     {
@@ -102,9 +106,18 @@ public class RoomController : MonoBehaviour
     void Update()
     {
         UpRoomQueue();
-        
+        currentTime += Time.deltaTime;
     }
 
+    public IEnumerator UpdateRoutineRooms()
+    {
+        yield return new WaitForSeconds(updateRoomsRefresh);
+        UpdateRooms();
+        if (currentTime < uptadeRoomsDuration)
+        {
+            StartCoroutine(UpdateRoutineRooms());
+        }
+    }
     public IEnumerator RoomCoroutine()
     {
         yield return new WaitForSeconds(0.2f);

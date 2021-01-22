@@ -39,7 +39,7 @@ public class EnemyController : MonoBehaviour
     private bool isDead = false;
     private Vector3 randomDir;
 
-    public bool notInRoom = false;
+    public bool notInRoom = true;
     GameObject roomController;
 
 
