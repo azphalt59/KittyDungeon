@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 217da78c3b7942e4a8a9c3591a0f5b84, type: 3}
   m_Name: 4crawlers
   m_EditorClassIdentifier: 
-  numberOfCrawlers: 2
+  numberOfCrawlers: 6
   iterationMin: 7
   iterationMax: 18
