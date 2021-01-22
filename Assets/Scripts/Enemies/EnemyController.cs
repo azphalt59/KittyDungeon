@@ -4,6 +4,7 @@ using UnityEngine;
 
 public enum DifferentState
 {
+      Idle,
       Patrol,
       Rush,
       Death,
@@ -21,7 +22,7 @@ public class EnemyController : MonoBehaviour
     GameObject player;
     
     [Header ("Class & State")]
-    public DifferentState EnemyIsDoing = DifferentState.Patrol;
+    public DifferentState EnemyIsDoing = DifferentState.Idle;
     public EnemyClass enemyClass;
     
     [Header ("Stats")]
@@ -39,6 +40,10 @@ public class EnemyController : MonoBehaviour
     private Vector3 randomDir;
 
     public bool notInRoom = false;
+    GameObject roomController;
+
+
+
 
     PlayerLife playerLife;
    
@@ -46,6 +51,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        roomController = GameObject.FindGameObjectWithTag("RoomManager");
         
     }
 
@@ -54,6 +60,9 @@ public class EnemyController : MonoBehaviour
     {
         switch (EnemyIsDoing)
         {
+            //case(DifferentState.Idle):
+            //Idle();
+            //break;
             case(DifferentState.Patrol):
                 Patrol();
                 break;
@@ -65,21 +74,29 @@ public class EnemyController : MonoBehaviour
             case(DifferentState.Attack):
                 Attack();
                 break;
-             
         }
 
-        if(inRangeVision(RangeVision) && EnemyIsDoing != DifferentState.Death)
+       
+        if (!notInRoom)
         {
-            EnemyIsDoing = DifferentState.Rush;
+            if (inRangeVision(RangeVision) && EnemyIsDoing != DifferentState.Death)
+            {
+                EnemyIsDoing = DifferentState.Rush;
+            }
+            else if (inRangeVision(RangeVision) == false && EnemyIsDoing != DifferentState.Death)
+            {
+                EnemyIsDoing = DifferentState.Patrol;
+            }
+            if (Vector3.Distance(transform.position, player.transform.position) <= RangeAttack)
+            {
+                EnemyIsDoing = DifferentState.Attack;
+            }
         }
-        else if(inRangeVision(RangeVision) == false && EnemyIsDoing != DifferentState.Death)
+        else
         {
-            EnemyIsDoing = DifferentState.Patrol;
+                EnemyIsDoing = DifferentState.Idle;
         }
-        if (Vector3.Distance(transform.position, player.transform.position) <= RangeAttack)
-        {
-            EnemyIsDoing = DifferentState.Attack;
-        }
+        
     }
 
     void Patrol()
@@ -93,7 +110,11 @@ public class EnemyController : MonoBehaviour
         {
             EnemyIsDoing = DifferentState.Rush;
         }
-        
+    }
+
+    void Idle()
+    {
+        transform.position += new Vector3(0, 0, 0);
     }
 
     private IEnumerator ChooseDirection()
@@ -143,6 +164,7 @@ public class EnemyController : MonoBehaviour
     }
     public void Death()
     {
+        RoomController.instance.StartCoroutine(RoomController.instance.RoomCoroutine());
         Destroy(gameObject);
     }
 

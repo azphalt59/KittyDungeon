@@ -20,5 +20,11 @@ public class Movement : MonoBehaviour
         transform.position += movement * speed * Time.deltaTime;
   
     }
-    
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Wall")
+            {Debug.Log("MUR DANS LA FACE");}
+    }
+
 }

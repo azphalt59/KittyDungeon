@@ -13,29 +13,43 @@ public class RoomObjectSpawner : MonoBehaviour
 
     public GridController grid;
     public RandomSpawner[] spawnerData;
+    RoomController roomController;
 
     void Start() 
     {
-    
+        
     }
 
     public void InitialiseObjectSpawning()
     {
-        foreach(RandomSpawner rs in spawnerData)
+        //StartCoroutine(WaitDungeonSpawn());
+        foreach (RandomSpawner rs in spawnerData)
+        {
+            SpawnObjects(rs);
+        }
+    }
+
+    IEnumerator WaitDungeonSpawn()
+    {
+        yield return new WaitForSeconds(2f);
+        foreach (RandomSpawner rs in spawnerData)
         {
             SpawnObjects(rs);
         }
     }
         
-    void SpawnObjects(RandomSpawner data)
+    public void SpawnObjects(RandomSpawner data)
     {
         int randomIteration = Random.Range(data.spawnerData.minToSpawn, data.spawnerData.maxToSpawn +1);
-
-        for(int i=0; i < randomIteration; i++)
+        
         {
-            int randomPos = Random.Range(0, grid.availablePoints.Count -1);
-            GameObject go = Instantiate(data.spawnerData.itemToSpawn, grid.availablePoints[randomPos], Quaternion.identity, transform) as GameObject;
-            grid.availablePoints.RemoveAt(randomPos);
+            for (int i = 0; i < randomIteration; i++)
+            {
+                int randomPos = Random.Range(0, grid.availablePoints.Count - 1);
+                GameObject go = Instantiate(data.spawnerData.itemToSpawn, grid.availablePoints[randomPos], Quaternion.identity, transform) as GameObject;
+                grid.availablePoints.RemoveAt(randomPos);
+            }
         }
+            
     }
 }
