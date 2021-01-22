@@ -97,7 +97,7 @@ public class PlayerLife : MonoBehaviour
         }
         if (health == 0)
         {
-            Debug.Log("MEURT");
+            Time.timeScale = 0f;
             // GO ECRAN DEF
         }
     }
