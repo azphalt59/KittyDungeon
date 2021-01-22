@@ -10,13 +10,13 @@ public class FishBulletController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(LifeTimeFishBullet());
+        Invoke("Disable", fishBulletTime);
     }
+    
+    public void Disable(){
 
-    IEnumerator LifeTimeFishBullet()
-    {
-        yield return new WaitForSeconds(fishBulletTime);
         Destroy(gameObject);
+
     }
 
     void OnTriggerEnter2D(Collider2D other)

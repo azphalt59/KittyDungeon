@@ -8,15 +8,23 @@ public class FishLauncher : MonoBehaviour
     public float bulletSpeed;
     public float fishCooldown;
     public float lastFishTimer =0;
+
+    private float xBulletDirection;
+    private float yBulletDirection;
     
 
     // Update is called once per frame
     void Update()
     {
-        float xBulletDirection = Input.GetAxis("Horizontal");
-        float yBulletDirection = Input.GetAxis("Vertical");
+        if(Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0){
+           
+            xBulletDirection  = Input.GetAxis("Horizontal");
+            yBulletDirection = Input.GetAxis("Vertical");
 
-        if(Input.GetKeyDown("joystick button 2"))
+        }
+
+
+        if(Input.GetKeyDown(KeyCode.K))
         {
             if ((xBulletDirection != 0 || yBulletDirection != 0) && fishCooldown < lastFishTimer)
             {
@@ -33,6 +41,8 @@ public class FishLauncher : MonoBehaviour
     {
 
         GameObject fishBullet = Instantiate(fishBulletPrefab, transform.position, transform.rotation) as GameObject;
+        fishBullet.transform.Rotate(0f, 0f, (xDir < 0) ?  90 : ((xDir > 0) ? -90 : 0), Space.World);
+        fishBullet.transform.Rotate(0f, 0f, (yDir < 0) ?  90 :  -90, Space.World);
         fishBullet.AddComponent<Rigidbody2D>().gravityScale = 0;
         fishBullet.GetComponent<Rigidbody2D>().velocity =
             new Vector3((xDir < 0) ? Mathf.Floor(xDir) * bulletSpeed : Mathf.Ceil(xDir) * bulletSpeed, (yDir < 0) ? Mathf.Floor(yDir) * bulletSpeed : Mathf.Ceil(yDir) * bulletSpeed, 0);
