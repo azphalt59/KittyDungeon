@@ -7,6 +7,8 @@ public class DungeonGenerator : MonoBehaviour
     public DungeonGenerationData dungeonGenerationData;
     private List<Vector2Int> dungeonRooms;
 
+    RoomController roomController;
+
     private void Start() 
     {
         dungeonRooms = DungeonController.GenerateDungeon(dungeonGenerationData);
@@ -21,6 +23,7 @@ public class DungeonGenerator : MonoBehaviour
             if(roomLocation == dungeonRooms[dungeonRooms.Count/2] &&!(roomLocation == Vector2Int.zero))
             {
                 RoomController.instance.LoadRoom("Shop", roomLocation.x, roomLocation.y);
+                // roomController.UpdateRooms();
             }
             else
             {

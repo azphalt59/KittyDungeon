@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 217da78c3b7942e4a8a9c3591a0f5b84, type: 3}
-  m_Name: 4crawlers
+  m_Script: {fileID: 11500000, guid: 90d057e4a2b347247b33e60ca5f63f84, type: 3}
+  m_Name: ZombieRusher
   m_EditorClassIdentifier: 
-  numberOfCrawlers: 2
-  iterationMin: 7
-  iterationMax: 18
+  itemToSpawn: {fileID: 903357058549292582, guid: 0c92b09467dcf43498b69f3e7d826ce8, type: 3}
+  minToSpawn: 0
+  maxToSpawn: 5
