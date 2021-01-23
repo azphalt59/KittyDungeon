@@ -4,34 +4,46 @@ using UnityEngine;
 
 public class EnemyLife : MonoBehaviour
 {
+    PlayerDmg playerDmg;
+    FishBulletController fishBulletController;
     EnemyController enemyController;
+    public int maxHealth;
+    public int health;
 
 
     void Start()
     {
-        enemyController.health = enemyController.maxHealth;   
+        health = maxHealth;   
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(enemyController.maxHealth < enemyController.health)
+        if(maxHealth < health)
         {
-            enemyController.health = enemyController.maxHealth;
+            health = maxHealth;
         }
-        if(enemyController.health == 0)
+        if(health == 0)
         {
-           enemyController.EnemyIsDoing = DifferentState.Death;
+            Destroy(this.gameObject);
         }
     }
 
     public void TakeDamage(int numberOfDamage)
     {
-        enemyController.health -= numberOfDamage;
-        if(enemyController.health <= 0)
+        health -= numberOfDamage;
+        if(health <= 0)
         {
-            enemyController.health = 0;
+            health = 0;
             return;
         }
     }
+
+    /*public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "FishBullet")
+        {
+            TakeDamage(playerDmg.fishDamage);
+        }
+    }*/
 }

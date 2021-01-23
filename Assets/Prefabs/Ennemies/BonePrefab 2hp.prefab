@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2922190281222245019}
   - component: {fileID: 6487455048884471473}
   m_Layer: 0
-  m_Name: BonePrefab
+  m_Name: BonePrefab 2hp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: fb4a5869e19cfee43a9fd598f3903493, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.052066326, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -96,6 +96,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60ae06ef8c714014fa28b17aaf2826a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletTimeLife: 5
+  bulletDamage: 1
+  bulletSpeed: 5
 --- !u!58 &6487455048884471473
 CircleCollider2D:
   m_ObjectHideFlags: 0

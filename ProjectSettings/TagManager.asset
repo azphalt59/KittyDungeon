@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - RoomManager
+  - FishBullet
   layers:
   - Default
   - TransparentFX
@@ -14,8 +15,8 @@ TagManager:
   - Water
   - UI
   - Wall
-  - 
-  - 
+  - FishBullet
+  - Player
   - 
   - 
   - 

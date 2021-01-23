@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2075659276819850011}
   - component: {fileID: 5821579487928441786}
+  - component: {fileID: 2922190281222245019}
   - component: {fileID: 6487455048884471473}
-  - component: {fileID: 3371022408066068250}
-  m_Layer: 7
-  m_Name: FishBullet
-  m_TagString: FishBullet
+  m_Layer: 0
+  m_Name: BonePrefab 1hp
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 20
-  m_Sprite: {fileID: 21300000, guid: 16cf88e88da709f42add3c290110a2aa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fb4a5869e19cfee43a9fd598f3903493, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -84,6 +84,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2922190281222245019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741002371435713084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60ae06ef8c714014fa28b17aaf2826a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletTimeLife: 5
+  bulletDamage: 1
+  bulletSpeed: 5
 --- !u!58 &6487455048884471473
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -100,17 +115,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.1
---- !u!114 &3371022408066068250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741002371435713084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f6c95623e73b8e4eb1757012d468b9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fishBulletTime: 5
-  fishBulletDamage: 2

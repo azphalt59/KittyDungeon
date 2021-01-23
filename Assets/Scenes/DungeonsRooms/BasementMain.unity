@@ -1352,6 +1352,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1734476568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734476559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b07b2715cf6a947a1b0353a83e7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishDamage: 0
 --- !u!1 &1798359753
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,7 +1472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadedRooms: []
   updateRoomsRefresh: 0.3
-  uptadeRoomsDuration: 4.2
+  uptadeRoomsDuration: 10
   currentTime: 0
   canSpawnItem: 0
 --- !u!4 &1957835534
@@ -1488,7 +1501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c9623b31c4d6c41a947506f375b2cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dungeonGenerationData: {fileID: 11400000, guid: c244697feb3c1ec4a87290cf4f4d8e63, type: 2}
+  dungeonGenerationData: {fileID: 11400000, guid: 47e1f78ee6947d64fa603ea53a8e221c, type: 2}
 --- !u!1 &2072278250
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,6 +1593,10 @@ PrefabInstance:
     - target: {fileID: 2297348943247604442, guid: a3d30eaea9764e244acf65b27a2bde4a, type: 3}
       propertyPath: m_Name
       value: Le perso
+      objectReference: {fileID: 0}
+    - target: {fileID: 2297348943247604442, guid: a3d30eaea9764e244acf65b27a2bde4a, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2297348943247604444, guid: a3d30eaea9764e244acf65b27a2bde4a, type: 3}
       propertyPath: m_RootOrder

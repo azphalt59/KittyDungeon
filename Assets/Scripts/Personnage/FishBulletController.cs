@@ -9,6 +9,8 @@ public class FishBulletController : MonoBehaviour
     EnemyLife enemyLife;
     EnemyController enemyController;
     FishLauncher fishLauncher;
+    PlayerDmg playerDmg;
+    public int fishBulletDamage;
 
 
 
@@ -23,13 +25,12 @@ public class FishBulletController : MonoBehaviour
         Destroy(gameObject);
 
     }
-
-    void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy")
         {
-            enemyLife.TakeDamage(fishLauncher.fishBulletDamage);
-            Debug.Log("L'ennemi prend " + fishLauncher.fishBulletDamage + " damages");
+            //Debug.Log("Enemy took " + fishBulletDamage + " damage");
+            other.GetComponent<EnemyLife>().TakeDamage(fishBulletDamage);
         }
     }
 }
