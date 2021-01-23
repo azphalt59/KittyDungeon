@@ -5,7 +5,7 @@ using UnityEngine;
 public class FishLauncher : MonoBehaviour
 {
     public GameObject fishBulletPrefab;
-    public int fishBulletDamage =1;
+    
     public float bulletSpeed;
     public float fishCooldown;
     public float lastFishTimer =0;

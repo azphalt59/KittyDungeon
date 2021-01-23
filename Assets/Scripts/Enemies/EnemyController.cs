@@ -24,6 +24,7 @@ public class EnemyController : MonoBehaviour
     [Header ("Class & State")]
     public DifferentState EnemyIsDoing = DifferentState.Idle;
     public EnemyClass enemyClass;
+    public int damageOnCollision;
     
     [Header ("Movement + Range")]
     public float enemySpeed;
@@ -35,14 +36,9 @@ public class EnemyController : MonoBehaviour
     public float reloadBulletTime;
     private bool reloadBullet = false;
     public float bulledSpeed;
-    public float bulletTimeLife;
-    public int bulletDamage;
     public GameObject boneBulletPrefab;
     
-    [Header("Health")]
-    public int maxHealth;
-    public int health;
-    private int numberOfDamage;
+    
 
     private bool chooseDir = false;
     private bool isDead = false;
@@ -159,7 +155,7 @@ public class EnemyController : MonoBehaviour
             switch (enemyClass)
             {
                 case (EnemyClass.Rusher):
-                    player.GetComponent<PlayerLife>().LoseHealth(bulletDamage);
+                    player.GetComponent<PlayerLife>().LoseHealth(damageOnCollision);
                     break;
                 case (EnemyClass.Shooter):
                     GameObject boneBullet = Instantiate(boneBulletPrefab, transform.position, Quaternion.identity) as GameObject;

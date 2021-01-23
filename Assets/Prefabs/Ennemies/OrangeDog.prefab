@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8012082529792957064}
   - component: {fileID: 8012082529792957065}
   - component: {fileID: 8012082529792957069}
+  - component: {fileID: 3869296841669061232}
   m_Layer: 0
   m_Name: OrangeDog
   m_TagString: Enemy
@@ -95,7 +96,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.00070384145, y: -0.17486095}
@@ -136,14 +137,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyIsDoing: 0
   enemyClass: 1
+  damageOnCollision: 0
   enemySpeed: 0.5
   RangeVision: 10
   RangeAttack: 5
   notInRoom: 0
   reloadBulletTime: 2.5
   bulledSpeed: 0.5
-  bulletTimeLife: 10
-  bulletDamage: 2
-  boneBulletPrefab: {fileID: 1741002371435713084, guid: 337ee044bf0d0f54c821dbfbefd90bb8, type: 3}
+  boneBulletPrefab: {fileID: 1741002371435713084, guid: d21656bfefc6be141ae553bcd999aa8f, type: 3}
+--- !u!114 &3869296841669061232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8012082529792957066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1405491a02c67754ea1b2a1c73ad9706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   maxHealth: 20
   health: 0

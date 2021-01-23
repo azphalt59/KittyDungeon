@@ -162,7 +162,7 @@ public class RoomController : MonoBehaviour
 
     public void UpdateRooms()
     {
-        Debug.Log("Rooms Update");
+        //Debug.Log("Rooms Update");
         foreach (Room room in loadedRooms)
         {
             if (currentRoom != room)

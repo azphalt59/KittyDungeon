@@ -51,7 +51,7 @@ public class PlayerLife : MonoBehaviour
 
     private IEnumerator BecomeInvincible()
     {
-        Debug.Log("INVINCIBLE");
+        //Debug.Log("INVINCIBLE");
         isInvincible = true;
 
         for (float i=0; i <invincibilityDuration; i += invincibilityDeltaTime)
@@ -67,7 +67,7 @@ public class PlayerLife : MonoBehaviour
             yield return new WaitForSeconds(invincibilityDeltaTime);
         }
 
-        Debug.Log("Mortel");
+        //Debug.Log("Mortel");
         ScaleModelTo(Vector3.one *10);
         isInvincible = false;
     }
