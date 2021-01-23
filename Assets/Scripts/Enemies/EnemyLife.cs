@@ -4,35 +4,33 @@ using UnityEngine;
 
 public class EnemyLife : MonoBehaviour
 {
-    [Header("La santé")]
-    public int maxHealth;
-    public int health;
-    public int numberOfDamage;
+    EnemyController enemyController;
+
 
     void Start()
     {
-        health = maxHealth;   
+        enemyController.health = enemyController.maxHealth;   
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(maxHealth < health)
+        if(enemyController.maxHealth < enemyController.health)
         {
-            health = maxHealth;
+            enemyController.health = enemyController.maxHealth;
         }
-        if(health == 0)
+        if(enemyController.health == 0)
         {
-            Destroy(this);
+           enemyController.EnemyIsDoing = DifferentState.Death;
         }
     }
 
     public void TakeDamage(int numberOfDamage)
     {
-        health -= numberOfDamage;
-        if(health <= 0)
+        enemyController.health -= numberOfDamage;
+        if(enemyController.health <= 0)
         {
-            health = 0;
+            enemyController.health = 0;
             return;
         }
     }

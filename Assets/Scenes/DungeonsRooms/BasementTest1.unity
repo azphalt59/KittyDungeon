@@ -1449,8 +1449,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grid: {fileID: 1558163151}
   spawnerData:
-  - name: Shooter
-    spawnerData: {fileID: 11400000, guid: 134610a2174dce246b188c625e31b70c, type: 2}
+  - name: Purple
+    spawnerData: {fileID: 11400000, guid: 20420ec6771004340a43bffdfc8dceda, type: 2}
 --- !u!61 &2057868328
 BoxCollider2D:
   m_ObjectHideFlags: 0

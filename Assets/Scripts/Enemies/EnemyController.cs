@@ -25,21 +25,30 @@ public class EnemyController : MonoBehaviour
     public DifferentState EnemyIsDoing = DifferentState.Idle;
     public EnemyClass enemyClass;
     
-    [Header ("Stats")]
+    [Header ("Movement + Range")]
     public float enemySpeed;
     public float RangeVision;
     public float RangeAttack;
-    public int damageAmount;
-    private bool reloadBullet = false;
+    public bool notInRoom = true;
+    
+    [Header("Bullet Stats")]
     public float reloadBulletTime;
-
+    private bool reloadBullet = false;
+    public float bulledSpeed;
+    public float bulletTimeLife;
+    public int bulletDamage;
     public GameObject boneBulletPrefab;
+    
+    [Header("Health")]
+    public int maxHealth;
+    public int health;
+    private int numberOfDamage;
 
     private bool chooseDir = false;
     private bool isDead = false;
     private Vector3 randomDir;
 
-    public bool notInRoom = true;
+    
     GameObject roomController;
 
 
@@ -122,6 +131,7 @@ public class EnemyController : MonoBehaviour
         chooseDir = true;
         yield return new WaitForSeconds(Random.Range(1f, 10f));
         randomDir = new Vector3(0, 0, Random.Range(0, 360));
+      
         Quaternion nextRotation = Quaternion.Euler(randomDir);
         transform.rotation = Quaternion.Lerp(transform.rotation, nextRotation, Random.Range(0.5f, 2.5f));
         chooseDir = false;
@@ -149,7 +159,7 @@ public class EnemyController : MonoBehaviour
             switch (enemyClass)
             {
                 case (EnemyClass.Rusher):
-                    player.GetComponent<PlayerLife>().LoseHealth(damageAmount);
+                    player.GetComponent<PlayerLife>().LoseHealth(bulletDamage);
                     break;
                 case (EnemyClass.Shooter):
                     GameObject boneBullet = Instantiate(boneBulletPrefab, transform.position, Quaternion.identity) as GameObject;
