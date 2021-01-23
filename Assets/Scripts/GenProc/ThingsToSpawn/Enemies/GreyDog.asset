@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90d057e4a2b347247b33e60ca5f63f84, type: 3}
-  m_Name: SkeletonShooter
+  m_Name: GreyDog
   m_EditorClassIdentifier: 
-  itemToSpawn: {fileID: 3350593983322997263, guid: d4d53c7a814d2304c80f14c1169293e1, type: 3}
-  minToSpawn: 0
+  itemToSpawn: {fileID: 2728973230192285143, guid: 8773b272d8029fe4e8e663dd1d9e1726, type: 3}
+  minToSpawn: 1
   maxToSpawn: 3

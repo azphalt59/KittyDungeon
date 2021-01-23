@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90d057e4a2b347247b33e60ca5f63f84, type: 3}
-  m_Name: ZombieRusher
+  m_Name: PurpleDog
   m_EditorClassIdentifier: 
-  itemToSpawn: {fileID: 903357058549292582, guid: 0c92b09467dcf43498b69f3e7d826ce8, type: 3}
-  minToSpawn: 0
-  maxToSpawn: 5
+  itemToSpawn: {fileID: 477973769305767636, guid: 517ec8fc44181fe458a81b05423ac032, type: 3}
+  minToSpawn: 2
+  maxToSpawn: 4

@@ -10,13 +10,7 @@ public class BoneBulletController : MonoBehaviour
     Vector2 pos;
     Vector2 posLastFrame;
 
-    [Header("Stats")]
-    public float bulletTime;
-    public int bulletDammage;
-    public float bulletSpeed;
-
-    
-
+    EnemyController enemyController;
     PlayerLife playerLife;
     
 
@@ -28,7 +22,7 @@ public class BoneBulletController : MonoBehaviour
     }
     IEnumerator LifeTime()
     {
-        yield return new WaitForSeconds(bulletTime);
+        yield return new WaitForSeconds(enemyController.bulletTimeLife);
         Destroy(gameObject);
     }
     public void Target(Transform player)
@@ -40,7 +34,7 @@ public class BoneBulletController : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            other.gameObject.GetComponent<PlayerLife>().LoseHealth(bulletDammage);
+            other.gameObject.GetComponent<PlayerLife>().LoseHealth(enemyController.bulletDamage);
             Destroy(gameObject);
         }
     }
@@ -48,7 +42,7 @@ public class BoneBulletController : MonoBehaviour
     void Update()
     {
         pos = transform.position;
-        transform.position = Vector2.MoveTowards(transform.position, target, bulletSpeed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, target, enemyController.bulledSpeed * Time.deltaTime);
         if(pos == posLastFrame)
         {
             Destroy(gameObject);

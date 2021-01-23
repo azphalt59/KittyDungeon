@@ -5,6 +5,7 @@ using UnityEngine;
 public class FishLauncher : MonoBehaviour
 {
     public GameObject fishBulletPrefab;
+    public int fishBulletDamage =1;
     public float bulletSpeed;
     public float fishCooldown;
     public float lastFishTimer =0;
@@ -23,8 +24,17 @@ public class FishLauncher : MonoBehaviour
 
         }
 
+        if (Input.GetKeyDown("joystick button 0"))
+        {
+            if ((xBulletDirection != 0 || yBulletDirection != 0) && fishCooldown < lastFishTimer)
+            {
+                LaunchFish(xBulletDirection, yBulletDirection);
+                lastFishTimer = 0;
+            }
 
-        if(Input.GetKeyDown(KeyCode.K))
+        }
+
+        if (Input.GetKeyDown(KeyCode.K))
         {
             if ((xBulletDirection != 0 || yBulletDirection != 0) && fishCooldown < lastFishTimer)
             {

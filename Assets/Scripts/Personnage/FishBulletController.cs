@@ -6,6 +6,11 @@ public class FishBulletController : MonoBehaviour
 {
 
     public float fishBulletTime;
+    EnemyLife enemyLife;
+    EnemyController enemyController;
+    FishLauncher fishLauncher;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +28,8 @@ public class FishBulletController : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            other.gameObject.GetComponent<EnemyController>().Death();
+            enemyLife.TakeDamage(fishLauncher.fishBulletDamage);
+            Debug.Log("L'ennemi prend " + fishLauncher.fishBulletDamage + " damages");
         }
     }
 }

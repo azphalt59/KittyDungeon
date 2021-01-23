@@ -539,7 +539,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grid: {fileID: 1962497829}
-  spawnerData: []
+  spawnerData:
+  - name: OrangeDog
+    spawnerData: {fileID: 11400000, guid: 09d2612293d8d704c9ad28a90b386a4c, type: 2}
 --- !u!61 &821938827
 BoxCollider2D:
   m_ObjectHideFlags: 0
