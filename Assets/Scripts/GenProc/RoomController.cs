@@ -174,6 +174,17 @@ public class RoomController : MonoBehaviour
                     {
                         enemy.notInRoom = true;
                     }
+                    /*foreach(Door door in room.GetComponentsInChildren<Door>())
+                    {
+                        door.doorCollider.SetActive(false);
+                    }
+                }
+                else
+                {
+                    foreach (Door door in room.GetComponentsInChildren<Door>())
+                    {
+                        door.doorCollider.SetActive(false);
+                    }*/
                 }
             }
             else
@@ -185,6 +196,17 @@ public class RoomController : MonoBehaviour
                     {
                         enemy.notInRoom = false;
                     }
+                    /*foreach (Door door in room.GetComponentsInChildren<Door>())
+                    {
+                        door.doorCollider.SetActive(true);
+                    }
+                }
+                else
+                {
+                    foreach (Door door in room.GetComponentsInChildren<Door>())
+                    {
+                        door.doorCollider.SetActive(false);
+                    }*/
                 }
             }
         }

@@ -31,6 +31,11 @@ public class FishBulletController : MonoBehaviour
         {
             //Debug.Log("Enemy took " + fishBulletDamage + " damage");
             other.GetComponent<EnemyLife>().TakeDamage(fishBulletDamage);
+            Destroy(this.gameObject);
+        }
+        if(other.gameObject.tag == "BulletCollider")
+        {
+            Destroy(this.gameObject);
         }
     }
 }
