@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5821579487928441786}
   - component: {fileID: 2922190281222245019}
   - component: {fileID: 6487455048884471473}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BonePrefab 2hp
   m_TagString: Untagged
   m_Icon: {fileID: 0}

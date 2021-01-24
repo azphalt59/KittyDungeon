@@ -44,6 +44,10 @@ public class BoneBulletController : MonoBehaviour
             other.gameObject.GetComponent<PlayerLife>().LoseHealth(bulletDamage);
             Destroy(gameObject);
         }
+        if(other.tag == "BulletCollider")
+        {
+            Destroy(this.gameObject);        
+        }
     }
 
     void Update()

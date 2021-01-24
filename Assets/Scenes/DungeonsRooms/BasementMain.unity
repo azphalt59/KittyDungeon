@@ -1700,7 +1700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2777954691502115820, guid: a3d30eaea9764e244acf65b27a2bde4a, type: 3}
       propertyPath: fishCooldown
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3d30eaea9764e244acf65b27a2bde4a, type: 3}
