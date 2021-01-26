@@ -34,9 +34,13 @@ public class ItemsController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            //brique de lait
             HealPlayer(healthChange);
+            // 
             MoveSpeedChange(moveSpeedChange);
+            // 
             AttackSpeedChange(attackSpeedChange);
+            //
             DamageChange(damageChange);
 
             Destroy(gameObject);
