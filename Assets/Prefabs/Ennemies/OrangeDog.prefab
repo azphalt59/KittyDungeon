@@ -145,6 +145,30 @@ MonoBehaviour:
   reloadBulletTime: 2.5
   bulledSpeed: 0.5
   boneBulletPrefab: {fileID: 1741002371435713084, guid: d21656bfefc6be141ae553bcd999aa8f, type: 3}
+  animNextPos:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &3869296841669061232
 MonoBehaviour:
   m_ObjectHideFlags: 0

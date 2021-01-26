@@ -139,12 +139,36 @@ MonoBehaviour:
   enemyClass: 1
   damageOnCollision: 0
   enemySpeed: 3
-  RangeVision: 8
-  RangeAttack: 5
+  RangeVision: 2
+  RangeAttack: 2
   notInRoom: 0
   reloadBulletTime: 1
   bulledSpeed: 2
   boneBulletPrefab: {fileID: 1741002371435713084, guid: 337ee044bf0d0f54c821dbfbefd90bb8, type: 3}
+  animNextPos:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &4298000129464814563
 MonoBehaviour:
   m_ObjectHideFlags: 0

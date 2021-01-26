@@ -43,6 +43,8 @@ public class EnemyController : MonoBehaviour
     private bool chooseDir = false;
     private bool isDead = false;
     private Vector3 randomDir;
+    private float waitForSeconds;
+    public AnimationCurve animNextPos;
 
     
     GameObject roomController;
@@ -110,7 +112,7 @@ public class EnemyController : MonoBehaviour
         {
             StartCoroutine(ChooseDirection());
         }
-        transform.position += -transform.right * enemySpeed * Time.deltaTime;
+        transform.position +=  randomDir * enemySpeed * Time.deltaTime;
         if(inRangeVision(RangeVision))
         {
             EnemyIsDoing = DifferentState.Rush;
@@ -125,11 +127,13 @@ public class EnemyController : MonoBehaviour
     private IEnumerator ChooseDirection()
     {
         chooseDir = true;
-        yield return new WaitForSeconds(Random.Range(1f, 10f));
-        randomDir = new Vector3(0, 0, Random.Range(0, 360));
-      
-        Quaternion nextRotation = Quaternion.Euler(randomDir);
-        transform.rotation = Quaternion.Lerp(transform.rotation, nextRotation, Random.Range(0.5f, 2.5f));
+        waitForSeconds = Random.Range(1f, 10f);
+        yield return new WaitForSeconds(waitForSeconds);
+        randomDir = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
+        
+        //new Vector3(Random.Range(-2, 2), Random.Range(-2, 2), 0);
+        //Vector3 nextRotation = randomDir;
+        //transform.position = Vector3.Lerp(transform.position, nextRotation, animNextPos.Evaluate(5));
         chooseDir = false;
     }
     private IEnumerator ReloadBullet()
