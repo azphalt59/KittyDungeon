@@ -24,6 +24,15 @@ EditorBuildSettings:
     path: Assets/Scenes/DungeonsRooms/BasementTest1.unity
     guid: 875a3c38a7299204ba2dc8fd1044ae2b
   - enabled: 1
+    path: Assets/Scenes/DungeonsRooms/BasementItemClaw.unity
+    guid: 6c28366166313884ba54baff3960f2db
+  - enabled: 1
+    path: Assets/Scenes/DungeonsRooms/BasementItemCroquette.unity
+    guid: 5ebb1a610075e7f4f90f605e3d14509e
+  - enabled: 1
+    path: Assets/Scenes/DungeonsRooms/BasementItemWool.unity
+    guid: e5ce7095be129954eaf89e4aa94ddea8
+  - enabled: 1
     path: Assets/Scenes/Menu/1 Main Menu.unity
     guid: 7d3805996cc15824484d1f7c8632728e
   - enabled: 1

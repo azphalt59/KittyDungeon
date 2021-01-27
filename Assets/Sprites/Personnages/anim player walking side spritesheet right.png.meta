@@ -1,0 +1,528 @@
+fileFormatVersion: 2
+guid: 154f342ef7635b64d84b2bfee02a40ed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5805876490061712668
+    second: anim player walking side spritesheet right_0
+  - first:
+      213: 2338036378337436211
+    second: anim player walking side spritesheet right_1
+  - first:
+      213: 3791870283264911457
+    second: anim player walking side spritesheet right_2
+  - first:
+      213: -2467083700219170096
+    second: anim player walking side spritesheet right_3
+  - first:
+      213: -6328005109729705187
+    second: anim player walking side spritesheet right_4
+  - first:
+      213: -8470136824109131112
+    second: anim player walking side spritesheet right_5
+  - first:
+      213: -5951502698439855848
+    second: anim player walking side spritesheet right_6
+  - first:
+      213: -2632413731697414197
+    second: anim player walking side spritesheet right_7
+  - first:
+      213: 6653477481653576092
+    second: anim player walking side spritesheet right_8
+  - first:
+      213: 5702693679795903213
+    second: anim player walking side spritesheet right_9
+  - first:
+      213: -2784128631865688879
+    second: anim player walking side spritesheet right_10
+  - first:
+      213: -302473717373151029
+    second: anim player walking side spritesheet right_11
+  - first:
+      213: -19587049655371242
+    second: anim player walking side spritesheet right_12
+  - first:
+      213: -5253775001876836166
+    second: anim player walking side spritesheet right_13
+  - first:
+      213: -615854669143888778
+    second: anim player walking side spritesheet right_14
+  - first:
+      213: -6393964005512968166
+    second: anim player walking side spritesheet right_15
+  - first:
+      213: 2307359072717214490
+    second: anim player walking side spritesheet right_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 7500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: anim player walking side spritesheet right_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1754
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e27418d7126d6fa0800000000000000
+      internalID: -5805876490061712668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim player walking side spritesheet right_1
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 1647
+        width: 108
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3326ebad2bf527020800000000000000
+      internalID: 2338036378337436211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim player walking side spritesheet right_2
+      rect:
+        serializedVersion: 2
+        x: 2434
+        y: 1754
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1686d54beed6f9430800000000000000
+      internalID: 3791870283264911457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim player walking side spritesheet right_3
+      rect:
+        serializedVersion: 2
+        x: 4673
+        y: 1650
+        width: 61
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2b741227823cdd0800000000000000
+      internalID: -2467083700219170096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim player walking side spritesheet right_4
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1647
+        width: 52
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1344b141e86e28a0800000000000000
+      internalID: -6328005109729705187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim player walking side spritesheet right_5
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 1657
+        width: 106
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a15086f67047a80800000000000000
+      internalID: -8470136824109131112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim player walking side spritesheet right_6
+      rect:
+        serializedVersion: 2
+        x: 4516
+        y: 1657
+        width: 108
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811b6b304d3086da0800000000000000
+      internalID: -5951502698439855848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim player walking side spritesheet right_7
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1584
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcfa05c78a9c77bd0800000000000000
+      internalID: -2632413731697414197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim player walking side spritesheet right_8
+      rect:
+        serializedVersion: 2
+        x: 2323
+        y: 1464
+        width: 126
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91a5079486e55c50800000000000000
+      internalID: 6653477481653576092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim player walking side spritesheet right_9
+      rect:
+        serializedVersion: 2
+        x: 2399
+        y: 1584
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea991700b9042f40800000000000000
+      internalID: 5702693679795903213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim player walking side spritesheet right_10
+      rect:
+        serializedVersion: 2
+        x: 4700
+        y: 1498
+        width: 33
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dcb6a0a2c9cc59d0800000000000000
+      internalID: -2784128631865688879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim player walking side spritesheet right_11
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1464
+        width: 98
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8d412b1c56dcbf0800000000000000
+      internalID: -302473717373151029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim player walking side spritesheet right_12
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 297
+        width: 481
+        height: 1263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61af71f9ea96abff0800000000000000
+      internalID: -19587049655371242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim player walking side spritesheet right_13
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 258
+        width: 452
+        height: 1234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0dd43b877d617b0800000000000000
+      internalID: -5253775001876836166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim player walking side spritesheet right_14
+      rect:
+        serializedVersion: 2
+        x: 2684
+        y: 296
+        width: 488
+        height: 1245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ca96cf07b0477f0800000000000000
+      internalID: -615854669143888778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim player walking side spritesheet right_15
+      rect:
+        serializedVersion: 2
+        x: 3941
+        y: 258
+        width: 452
+        height: 1234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1804c81d931447a0800000000000000
+      internalID: -6393964005512968166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim player walking side spritesheet right_16
+      rect:
+        serializedVersion: 2
+        x: 4712
+        y: 1478
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13959a0ad2650020800000000000000
+      internalID: 2307359072717214490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

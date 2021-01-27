@@ -37,6 +37,8 @@ public class EnemyController : MonoBehaviour
     private bool reloadBullet = false;
     public float bulledSpeed;
     public GameObject boneBulletPrefab;
+
+    
     
     
 
@@ -44,12 +46,17 @@ public class EnemyController : MonoBehaviour
     private bool isDead = false;
     private Vector3 randomDir;
     private float waitForSeconds;
-    public AnimationCurve animNextPos;
+    private AnimationCurve animNextPos;
 
     
     GameObject roomController;
 
-
+    [Header("Anim")]
+    
+    public float speedX;
+    public float speedY;
+    public Animator anim;
+    Vector3 lastPosition = Vector3.zero;
 
 
     PlayerLife playerLife;
@@ -58,13 +65,28 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        roomController = GameObject.FindGameObjectWithTag("RoomManager");
         
+
+        
+        anim = GetComponent<Animator>();
+    }
+
+    
+    void FixedUpdate()
+    {
+        speedX = (transform.position.x - lastPosition.x);
+        speedY = (transform.position.y - lastPosition.y);
+        lastPosition = transform.position;
+
+        anim.SetFloat("SpeedY", speedY);
     }
 
     // Update is called once per frame
     void Update()
-    {
+    {  
+        
+        
+
         switch (EnemyIsDoing)
         {
             //case(DifferentState.Idle):
@@ -129,7 +151,7 @@ public class EnemyController : MonoBehaviour
         chooseDir = true;
         waitForSeconds = Random.Range(1f, 10f);
         yield return new WaitForSeconds(waitForSeconds);
-        randomDir = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
+        randomDir = new Vector2(Random.Range(-0.001f, 0.001f), Random.Range(-0.001f, 0.001f));
         
         //new Vector3(Random.Range(-2, 2), Random.Range(-2, 2), 0);
         //Vector3 nextRotation = randomDir;
@@ -174,7 +196,7 @@ public class EnemyController : MonoBehaviour
     }
     public void Death()
     {
-        RoomController.instance.StartCoroutine(RoomController.instance.RoomCoroutine());
+        
         Destroy(gameObject);
     }
 

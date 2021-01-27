@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2728973230192285140}
   - component: {fileID: 2728973230192285136}
   - component: {fileID: 4387159295855013460}
+  - component: {fileID: 2846614728544310378}
   m_Layer: 0
   m_Name: GreyDog
   m_TagString: Enemy
@@ -145,30 +146,11 @@ MonoBehaviour:
   reloadBulletTime: 1.5
   bulledSpeed: 1
   boneBulletPrefab: {fileID: 1741002371435713084, guid: 337ee044bf0d0f54c821dbfbefd90bb8, type: 3}
-  animNextPos:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  milkPrefab: {fileID: 7249080701100533102, guid: 5cb0fea6800e0d744b684603162eab66, type: 3}
+  spawnRateMilk: 0.2
+  speedX: 0
+  speedY: 0
+  anim: {fileID: 0}
 --- !u!114 &4387159295855013460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,3 +165,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 8
   health: 0
+  milkPrefab: {fileID: 7249080701100533102, guid: 5cb0fea6800e0d744b684603162eab66, type: 3}
+  spawnRateMilk: 0.3
+--- !u!95 &2846614728544310378
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2728973230192285143}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 92f3b94f3f7c6374ca45b2b3088704f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

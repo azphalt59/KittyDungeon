@@ -23,6 +23,10 @@ public class RoomController : MonoBehaviour
     public List<Room> loadedRooms = new List<Room>();
     bool isLoadingRoom = false;
     bool spawnedBossRoom = false;
+    bool spawnedItemRoom = false;
+    bool spawnItem1 = false;
+    bool spawnItem2 = false;
+    bool spawnItem3 = false;
     bool updatedRooms = false;
     public float updateRoomsRefresh;
     public float uptadeRoomsDuration;
@@ -162,7 +166,7 @@ public class RoomController : MonoBehaviour
 
     public void UpdateRooms()
     {
-        //Debug.Log("Rooms Update");
+        Debug.Log("Rooms Update");
         foreach (Room room in loadedRooms)
         {
             if (currentRoom != room)
@@ -173,8 +177,8 @@ public class RoomController : MonoBehaviour
                     foreach (EnemyController enemy in ennemies)
                     {
                         enemy.notInRoom = true;
-                    }
-                    /*foreach(Door door in room.GetComponentsInChildren<Door>())
+                    } /*
+                    foreach(Door door in room.GetComponentsInChildren<Door>())
                     {
                         door.doorCollider.SetActive(false);
                     }
@@ -195,10 +199,13 @@ public class RoomController : MonoBehaviour
                     foreach (EnemyController enemy in ennemies)
                     {
                         enemy.notInRoom = false;
-                    }
-                    /*foreach (Door door in room.GetComponentsInChildren<Door>())
+                    } 
+                    foreach (Door door in room.GetComponentsInChildren<Door>())
                     {
                         door.doorCollider.SetActive(true);
+                        Debug.Log("LES PORTES SE FERMENT");
+                        // Anim des portes qui se ferment (anim à l'envers)
+
                     }
                 }
                 else
@@ -206,7 +213,9 @@ public class RoomController : MonoBehaviour
                     foreach (Door door in room.GetComponentsInChildren<Door>())
                     {
                         door.doorCollider.SetActive(false);
-                    }*/
+                        Debug.Log("Les portes s'ouvrent");
+                        // Anim des portes qui s'ouvrent
+                    }
                 }
             }
         }
@@ -224,19 +233,49 @@ public class RoomController : MonoBehaviour
 
     IEnumerator SpawnBossRoom()
     {
-        spawnedBossRoom = true;
+
         yield return new WaitForSeconds(0.5f);
-        if(loadRoomQueue.Count == 0)
+
+        canSpawnItem = true;
+        
+        spawnedBossRoom = true;
+        if (loadRoomQueue.Count == 0 && spawnItem1 == false)
         {
-            Room bossRoom = loadedRooms[loadedRooms.Count -1];
+            spawnItem1 = true;
+            //Wool Room
+            Room woolRoom = loadedRooms[loadedRooms.Count - loadRoomQueue.Count - Random.Range(2,5)];
+            Room woolTempRoom = new Room(woolRoom.X, woolRoom.Y);
+            Destroy(woolRoom.gameObject);
+            var woolRoomToRemove = loadedRooms.Single(r => r.X == woolTempRoom.X && r.Y == woolTempRoom.Y);
+            loadedRooms.Remove(woolRoomToRemove);
+            LoadRoom("ItemWool", woolTempRoom.X, woolTempRoom.Y);
+
+            //Claw Room
+            Room clawRoom = loadedRooms[loadedRooms.Count - loadRoomQueue.Count - Random.Range(6, 11)];
+            Room clawTempRoom = new Room(clawRoom.X, clawRoom.Y);
+            Destroy(clawRoom.gameObject);
+            var clawRoomToRemove = loadedRooms.Single(r => r.X == clawTempRoom.X && r.Y == clawTempRoom.Y);
+            loadedRooms.Remove(clawRoomToRemove);
+            LoadRoom("ItemClaw", clawTempRoom.X, clawTempRoom.Y);
+
+            //Croquette Room
+            Room croquetteRoom = loadedRooms[loadedRooms.Count - loadRoomQueue.Count - Random.Range(11, 19)];
+            Room croquetteTempRoom = new Room(croquetteRoom.X, croquetteRoom.Y);
+            Destroy(croquetteRoom.gameObject);
+            var croquetteRoomToRemove = loadedRooms.Single(r => r.X == croquetteTempRoom.X && r.Y == croquetteTempRoom.Y);
+            loadedRooms.Remove(croquetteRoomToRemove);
+            LoadRoom("ItemCroquette", croquetteTempRoom.X, croquetteTempRoom.Y);
+
+            //Boss Room
+            Room bossRoom = loadedRooms[loadedRooms.Count - 1];
             Room tempRoom = new Room(bossRoom.X, bossRoom.Y);
             Destroy(bossRoom.gameObject);
             var roomToRemove = loadedRooms.Single(r => r.X == tempRoom.X && r.Y == tempRoom.Y);
             loadedRooms.Remove(roomToRemove);
             LoadRoom("End", tempRoom.X, tempRoom.Y);
-            canSpawnItem = true;
             
             
         }
+        
     }
 }
