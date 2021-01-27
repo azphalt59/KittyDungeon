@@ -25,6 +25,22 @@ public class DungeonGenerator : MonoBehaviour
                 RoomController.instance.LoadRoom("Shop", roomLocation.x, roomLocation.y);
                 // roomController.UpdateRooms();
             }
+            /*if (roomLocation == dungeonRooms[dungeonRooms.Count *(3/4)] && !(roomLocation == Vector2Int.zero))
+            {
+                RoomController.instance.LoadRoom("ItemCroquette", roomLocation.x, roomLocation.y);
+                // roomController.UpdateRooms();
+
+            }
+            //if (roomLocation == dungeonRooms[dungeonRooms.Count *(1/4)] && !(roomLocation == Vector2Int.zero))
+            {
+                RoomController.instance.LoadRoom("ItemClaw", roomLocation.x, roomLocation.y);
+                // roomController.UpdateRooms();
+            }
+            //if (roomLocation == dungeonRooms[dungeonRooms.Count *(2/5)] && !(roomLocation == Vector2Int.zero))
+            {
+                RoomController.instance.LoadRoom("ItemWool", roomLocation.x, roomLocation.y);
+                // roomController.UpdateRooms();
+            }*/
             else
             {
                 RoomController.instance.LoadRoom(RoomController.instance.GetRandomRoomName(), roomLocation.x, roomLocation.y);

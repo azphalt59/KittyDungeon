@@ -11,12 +11,15 @@ public class FishBulletController : MonoBehaviour
     FishLauncher fishLauncher;
     PlayerDmg playerDmg;
     public int fishBulletDamage;
+    private GameObject player;
 
 
 
     // Start is called before the first frame update
     void Start()
+
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         Invoke("Disable", fishBulletTime);
     }
     
@@ -30,7 +33,7 @@ public class FishBulletController : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             //Debug.Log("Enemy took " + fishBulletDamage + " damage");
-            other.GetComponent<EnemyLife>().TakeDamage(fishBulletDamage);
+            other.GetComponent<EnemyLife>().TakeDamage(player.GetComponent<PlayerDmg>().fishDamage);
             Destroy(this.gameObject);
         }
         if(other.gameObject.tag == "BulletCollider")

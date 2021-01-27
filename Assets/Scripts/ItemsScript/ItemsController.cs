@@ -18,16 +18,22 @@ public class ItemsController : MonoBehaviour
     public int damageChange;
     public float fishBulletSize;
 
+    private GameObject player;
+
     PlayerLife playerLife;
     Movement playerMovement;
     FishLauncher fishLauncher;
     FishBulletController fishBulletController;
+    PlayerDmg playerDmg;
 
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         GetComponent<SpriteRenderer>().sprite = item.imageItem;
         Destroy(GetComponent<PolygonCollider2D>());
         gameObject.AddComponent<PolygonCollider2D>();
+        gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -51,22 +57,27 @@ public class ItemsController : MonoBehaviour
     public void HealPlayer(int healAmount)
     {
         Debug.Log("Je récupère " + healAmount + " hp");
+        playerLife = player.GetComponent<PlayerLife>();
         playerLife.health = Mathf.Min(playerLife.maxHealth, playerLife.health + healAmount);
     }
+   
     public void MoveSpeedChange(float speed)
     {
         Debug.Log("Ma moove speed se multiplie par " + speed);
+        playerMovement = player.GetComponent<Movement>();
         playerMovement.speed *= speed;
     }
     public void AttackSpeedChange(float attackSpeed)
     {
         Debug.Log("Mon Attack speed augmente de " + attackSpeed);
+        fishLauncher = player.GetComponent<FishLauncher>();
         fishLauncher.fishCooldown -= attackSpeed;
     }
     public void DamageChange(int damage)
     {
         Debug.Log("Mes projectiles font + " + damage + " damages");
-        fishBulletController.fishBulletDamage += damage;
+        playerDmg = player.GetComponent<PlayerDmg>();
+        playerDmg.fishDamage += damage;
     }
 
 
