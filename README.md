@@ -12,3 +12,7 @@ L'effet recherché était de faire des graphismes assez stylisé cartoon/vectori
 # Description du fun
  
 Le côté décalé ou on incarne un chat cosmonaute qui tire des poissons sur des chiens fait pour moi parti de ce qui rend le jeu "amusant"
+
+# Problème rencontrés 
+
+Régler les problèmes de git nous a un peu ralenti dans notre travail, surtout quand nous avaons du recommencer entièrement la manipulation plusieurs fois.
