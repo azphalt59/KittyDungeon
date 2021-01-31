@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: 6029e3b7b6c0aec4f81d40ca1d881fa3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2716928152028411771
+    second: anim_player_wlaking_down_spritesheet_0
+  - first:
+      213: 8007849009818589786
+    second: anim_player_wlaking_down_spritesheet_1
+  - first:
+      213: -6480711010899731459
+    second: anim_player_wlaking_down_spritesheet_2
+  - first:
+      213: 4870417885877888210
+    second: anim_player_wlaking_down_spritesheet_3
+  - first:
+      213: -4905755574401834879
+    second: anim_player_wlaking_down_spritesheet_4
+  - first:
+      213: 6587022288314103437
+    second: anim_player_wlaking_down_spritesheet_5
+  - first:
+      213: -2002892051451663350
+    second: anim_player_wlaking_down_spritesheet_6
+  - first:
+      213: -6325645118713167872
+    second: anim_player_wlaking_down_spritesheet_7
+  - first:
+      213: -7817949271296899189
+    second: anim_player_wlaking_down_spritesheet_8
+  - first:
+      213: -8408780553888625175
+    second: anim_player_wlaking_down_spritesheet_9
+  - first:
+      213: -110492127237313560
+    second: anim_player_wlaking_down_spritesheet_10
+  - first:
+      213: -5442255933661704015
+    second: anim_player_wlaking_down_spritesheet_11
+  - first:
+      213: -2246349137356352568
+    second: anim_player_wlaking_down_spritesheet_12
+  - first:
+      213: 5152170534994091104
+    second: anim_player_wlaking_down_spritesheet_13
+  - first:
+      213: 2363475650888609415
+    second: anim_player_wlaking_down_spritesheet_14
+  - first:
+      213: -7965463734765003853
+    second: anim_player_wlaking_down_spritesheet_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 7500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: anim_player_wlaking_down_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 1807
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588861a9d388b4ad0800000000000000
+      internalID: -2716928152028411771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_player_wlaking_down_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 3813
+        y: 1807
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a533d3f38912f60800000000000000
+      internalID: 8007849009818589786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_player_wlaking_down_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1763
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfbdb5ffba3ef06a0800000000000000
+      internalID: -6480711010899731459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_player_wlaking_down_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 2647
+        y: 1770
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4e57b3343379340800000000000000
+      internalID: 4870417885877888210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_player_wlaking_down_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 296
+        width: 1045
+        height: 1199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180e2e00c414bebb0800000000000000
+      internalID: -4905755574401834879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_player_wlaking_down_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 1379
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86fa862fddc96b50800000000000000
+      internalID: 6587022288314103437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_player_wlaking_down_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 335
+        width: 1022
+        height: 1185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c25cd7a4c4434e0800000000000000
+      internalID: -2002892051451663350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_player_wlaking_down_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 2525
+        y: 303
+        width: 1045
+        height: 1199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0000beb774bc638a0800000000000000
+      internalID: -6325645118713167872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_player_wlaking_down_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 3566
+        y: 1379
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87035c1f80118390800000000000000
+      internalID: -7817949271296899189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_player_wlaking_down_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 3709
+        y: 335
+        width: 1020
+        height: 1186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed814b43a20e4b80800000000000000
+      internalID: -8408780553888625175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_player_wlaking_down_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1334
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ebea85eef3777ef0800000000000000
+      internalID: -110492127237313560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_player_wlaking_down_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 2399
+        y: 1341
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0155900193974b0800000000000000
+      internalID: -5442255933661704015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_player_wlaking_down_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 2390
+        y: 1128
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c39e5a7c5d53d0e0800000000000000
+      internalID: -2246349137356352568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_player_wlaking_down_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 3702
+        y: 1130
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c9e80edcf208740800000000000000
+      internalID: 5152170534994091104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_player_wlaking_down_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 4729
+        y: 1126
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e208e0590ccc020800000000000000
+      internalID: 2363475650888609415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_player_wlaking_down_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 2396
+        y: 1079
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb5312afecf47190800000000000000
+      internalID: -7965463734765003853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
