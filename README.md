@@ -22,5 +22,6 @@ Régler les problèmes de git nous a un peu ralenti dans notre travail, surtout 
 
 # Vidéo 
 
-https://www.youtube.com/watch?v=01l8KpWOtgc&feature=youtu.be&ab_channel=mimosa59112
-https://www.youtube.com/watch?v=SALrrI30wTw&feature=youtu.be&ab_channel=mimosa59112
+Vidéo 1 :https://www.youtube.com/watch?v=01l8KpWOtgc&feature=youtu.be&ab_channel=mimosa59112
+
+Vidéo 2 :https://www.youtube.com/watch?v=SALrrI30wTw&feature=youtu.be&ab_channel=mimosa59112
