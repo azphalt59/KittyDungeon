@@ -16,3 +16,10 @@ Le côté décalé ou on incarne un chat cosmonaute qui tire des poissons sur de
 # Problème rencontrés 
 
 Régler les problèmes de git nous a un peu ralenti dans notre travail, surtout quand nous avaons du recommencer entièrement la manipulation plusieurs fois.
+
+
+
+
+# Vidéo 
+
+https://www.youtube.com/watch?v=01l8KpWOtgc&feature=youtu.be&ab_channel=mimosa59112
